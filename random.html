@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt("enter a number from 0 - 9"))
+        let b = Math.floor(Math.random()*10)
+
+        let c = Number(prompt("enter a number from 0 - 9"))
+        // let d = Math.floor(Math.random()*10)
+        console.log("player one value is : "+ a)
+        console.log("player two value is : "+ c)
+        console.log("computer value is : "+b)
+        // console.log("secont computer value is : " +d)
+        // if(a === b){
+        //     console.log("matched")
+        // }
+        // else if(a > b || b > a){
+        //     console.log("failed")
+        // }
+        // if(c === d){
+        //     console.log("matched")
+        // }
+        // else if(c > d || d> c){
+        //     console.log("failed")
+        // }
+
+        var n = a - b
+        if(n<0){
+            n = -n
+        }
+        console.log("user1 diffrence is "+ n)
+        var m = c - b
+        if(m<0){
+            m = -m
+        }
+        console.log("user2 diffrence is "+ m)
+        if(n>m){
+            console.log("gajju wins")
+        }
+        else if(n===m){
+            console.log("it's a draw")
+        }
+        else{
+            console.log("gaurav wins")
+        }
+
+
+    </script>
+</body>
+</html>
